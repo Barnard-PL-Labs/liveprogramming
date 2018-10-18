@@ -1,0 +1,23 @@
+{
+  "name": "live-programming1",
+  "main": "./lib/live-programming1",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "live-programming1:toggle"
+  },
+  "repository": "https://github.com/atom/live-programming1",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+
+  "dependencies": {
+  },
+  "deserializers": {
+    "live-programming1/LiveProgramming1View":
+     "deserializeLiveProgramming1View"
+  }
+}

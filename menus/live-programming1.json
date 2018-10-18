@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle live-programming1",
+        "command": "live-programming1:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "live-programming1",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "live-programming1:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

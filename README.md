@@ -25,9 +25,9 @@ progress:
 TODOS (sorted by difficulty):
 - allow for deleting examples
 - save input examples in a temp file (associated with code file) and load when we pull up that code file
-- only rerun/update output examples on syntactically correct code (for .js is the same as running the code?)
+- synthesize code
 
 
 Long term TODOS:
 - support Haskell
-- synthesize code
+- only rerun/update output examples on syntactically correct code (for .js is the same as running the code?)

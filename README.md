@@ -18,12 +18,14 @@ progress:
 - open workspace panel as an editable window for user inputs
 - reevaluates code on code (onDidChange)
 - multiple input/output examples for single function
+- reevaluate code on example change (cannot be done until we have TextEditor)
+- provide examples for multiple functions
+- allow for arbitrary number of examples
 
 TODOS (sorted by difficulty):
 - replace example UI with TextEditor
-- reevaluate code on example change (cannot be done until we have TextEditor)
-- save examples in a temp file (associated with code file) and load when we pull up that code file
-- provide examples for multiple functions
+- allow for deleting examples
+- save input examples in a temp file (associated with code file) and load when we pull up that code file
 - only rerun/update output examples on syntactically correct code (for .js is the same as running the code?)
 
 

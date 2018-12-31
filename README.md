@@ -13,6 +13,14 @@ git clone https://github.com/Jack-Huang1/liveprogramming
 cd liveprogramming
 apm link
 ```
+You will also need a sygus solver installed. CVC4 is the easiest installation process. Download the binary, rename is 'cvc4', and add it to your path. This is an easy way to do that
+
+```
+wget http://cvc4.cs.stanford.edu/downloads/builds/x86_64-linux-opt/cvc4-1.6-x86_64-linux-opt
+mv cvc4-1.6-x86_64-linux-opt cvc4
+chmod u+x cvc4
+mv cvc4 /usr/bin/
+```
 
 Use ctrl+shfit+F5 to reload package in Atom (sometimes need to press twice)
 
@@ -39,10 +47,12 @@ progress:
 TODOS (sorted by difficulty):
 - [ ] synthesize/repair code
 - [ ] ability to turn off package
+- [ ] only generate .sl files for target pbe code
 - [ ] preserve white space in example file
 - [ ] richer json format for examples?
 - [ ] better example interface?
-
+- [ ] use existing function as basis for grammar of sygus initial repair attempt. if no solution is found, iteratively expand grammar.
+- [ ] when synthesizing multiple fxns, first pick one function to try repairing. then supply define-fxn in SYGUS format for the other fixed fxns so they can be used in synthesis of target function. Then try this for all functions. then pick best repair. TODO this does not allow for changing more than one function at a time
 
 Long term TODOS:
 - [ ] support Haskell

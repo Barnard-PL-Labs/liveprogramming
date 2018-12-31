@@ -3,8 +3,7 @@
   "main": "./lib/live-programming1",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "live-programming1:toggle"
   },
@@ -13,11 +12,10 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-
   "dependencies": {
+    "function-extractor": "0.0.5"
   },
   "deserializers": {
-    "live-programming1/LiveProgramming1View":
-     "deserializeLiveProgramming1View"
+    "live-programming1/LiveProgramming1View": "deserializeLiveProgramming1View"
   }
 }

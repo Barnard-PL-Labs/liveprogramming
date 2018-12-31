@@ -13,6 +13,14 @@ git clone https://github.com/Jack-Huang1/liveprogramming
 cd liveprogramming
 apm link
 ```
+You might also need to update the package dependencies
+
+```
+press ctrl+shift+p
+type 'udup' to execute "Update Package Dependecies: Update"
+press enter
+```
+
 You will also need a sygus solver installed. CVC4 is the easiest installation process. Download the binary, rename is 'cvc4', and add it to your path. This is an easy way to do that
 
 ```

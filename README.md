@@ -32,13 +32,26 @@ mv cvc4 /usr/bin/
 
 Use ctrl+shfit+F5 to reload package in Atom (sometimes need to press twice)
 
-Examples should be given as a json file:
+
+# Usage instructions
+
+Open the .js file you want to use PBE repair. Turn on the package with ctrl+shift+e (or Packages > liveprogramming1 > Toggle).
+
+Examples should be given as a json array in the .examples file. Note that you need to escape quotes when using strings.
 
 ```
-["main(2,4)",8,"f(3)",5]
+["main(\"a\",\"b\")","a","f("\a\")","a"]
 ```
 
 This file is saved in the same directory as the code on which it runs. for example ```tests/addition.js``` has examples in ```tests/addition.js.examples```.
+
+# Notes
+
+Only string are supported at the moment.
+
+It is really important to start the package with the correct file open. If you start the package with the wrong file, or you want to use the package with a different file, you need to refresh the atom editor (ctrl+shift+f5), then start the package again. This will be fixed when one of us learns to use the atom API.
+
+# TODOs
 
 progress:
 - [x] can read and evaluate basic functions from current file window (i.e., addition.js)
@@ -51,16 +64,19 @@ progress:
 - [x] allow for deleting examples
 - [x] save input examples in a temp file (associated with code file) and load when we pull up that code file
 - [x] only rerun/update output examples on syntactically correct code (for .js, this means catching syntax errors at runtime)
+- [x] basic white space formatting for example file
+- [x] basic code repair
 
 TODOS (sorted by difficulty):
-- [ ] synthesize/repair code
 - [ ] ability to turn off package
 - [ ] only generate .sl files for target pbe code
-- [ ] preserve white space in example file
 - [ ] richer json format for examples?
 - [ ] better example interface?
-- [ ] use existing function as basis for grammar of sygus initial repair attempt. if no solution is found, iteratively expand grammar.
-- [ ] when synthesizing multiple fxns, first pick one function to try repairing. then supply define-fxn in SYGUS format for the other fixed fxns so they can be used in synthesis of target function. Then try this for all functions. then pick best repair. TODO this does not allow for changing more than one function at a time
+- [ ] allow synthesis to use component user-defined functions
+- [ ] support types (only have strings at the moment). maybe this requires user-provided annotations? or can we use ```typeof``` on the examples provided?
+- [ ] use existing function definition as basis for grammar of sygus initial repair attempt. if no solution is found, iteratively expand grammar.
+- [ ] if we cannot find a solution for the function with new examples, or multiple examples have changed, we need a strategy to try multiple functions. One idea: First pick one function to try repairing. Then supply define-fxn in SYGUS format for the other fixed fxns so they can be used in synthesis of target function. Then try this for all functions. then pick best repair. Note, this approach still means only one function definition can be updated in a single synthesis step.
 
 Long term TODOS:
 - [ ] support Haskell
+- [ ] repair to multiple functions at the same time. This entirely out-of-scope for sygus solvers.

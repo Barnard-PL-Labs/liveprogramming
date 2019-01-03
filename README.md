@@ -66,13 +66,14 @@ progress:
 - [x] only rerun/update output examples on syntactically correct code (for .js, this means catching syntax errors at runtime)
 - [x] basic white space formatting for example file
 - [x] basic code repair
-- [x] add support for .replace() and string indexing 
+- [x] add support for .replace() and string indexing
 
 TODOS (sorted by difficulty):
 - [ ] ability to turn off package
 - [ ] only generate .sl files for target pbe code
 - [ ] richer json format for examples?
 - [ ] better example interface?
+- [ ] add spinner icon when trying to synthesize something that takes a while
 - [ ] allow synthesis to use component user-defined functions
 - [ ] support types (only have strings at the moment). maybe this requires user-provided annotations? or can we use ```typeof``` on the examples provided?
 - [ ] use existing function definition as basis for grammar of sygus initial repair attempt. if no solution is found, iteratively expand grammar.

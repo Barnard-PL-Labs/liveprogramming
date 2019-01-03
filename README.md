@@ -66,6 +66,7 @@ progress:
 - [x] only rerun/update output examples on syntactically correct code (for .js, this means catching syntax errors at runtime)
 - [x] basic white space formatting for example file
 - [x] basic code repair
+- [x] add support for .replace() and string indexing 
 
 TODOS (sorted by difficulty):
 - [ ] ability to turn off package

@@ -1,3 +1,4 @@
-f("a b") = "a*b"
-f("b a ") = "b*a*"
-main("d","y") = "dy y"
+greet("hello", "world") = "hello world"
+format("hello") = "h3llo!"
+format("eat") = "3at!"
+format(greet("hello", "world")) = "h3llo world!"

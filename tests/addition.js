@@ -1,7 +1,11 @@
-function main(p1, p2) {
-  return p1 + p2 + ' ' + p2 + ' ';
+function greet(greeting, name) {
+//  return greeting + name;
+  return greeting + ' ' + name;
 }
 
-function f(x) {
-  return x;
+function format(x) {
+//////  return x;
+////  return 'h' + '3' + 'l' + 'l' + 'o';
+//  return x.replace('e', '3');
+  return x.replace('e', '3') + '!';
 }

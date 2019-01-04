@@ -37,10 +37,12 @@ Use ctrl+shfit+F5 to reload package in Atom (sometimes need to press twice)
 
 Open the .js file you want to use PBE repair. Turn on the package with ctrl+shift+e (or Packages > liveprogramming1 > Toggle).
 
-Examples should be given as a json array in the .examples file. Note that you need to escape quotes when using strings.
+Examples should be given in the form below in the .examples file. One example per line.
 
 ```
-["main(\"a\",\"b\")","a","f("\a\")","a"]
+f("a b") = "a*b"
+f("b a ") = "b*a*"
+main("d","y") = "dy y"
 ```
 
 This file is saved in the same directory as the code on which it runs. for example ```tests/addition.js``` has examples in ```tests/addition.js.examples```.
@@ -67,11 +69,11 @@ progress:
 - [x] basic white space formatting for example file
 - [x] basic code repair
 - [x] add support for .replace() and string indexing
+- [x] new language for giving examples - only using json on the backend now
 
 TODOS (sorted by difficulty):
 - [ ] ability to turn off package
 - [ ] only generate .sl files for target pbe code
-- [ ] richer json format for examples?
 - [ ] better example interface?
 - [ ] add spinner icon when trying to synthesize something that takes a while
 - [ ] allow synthesis to use component user-defined functions

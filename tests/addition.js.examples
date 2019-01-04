@@ -1,4 +1,1 @@
-greet("hello", "world") = "hello world"
-format("hello") = "h3llo!"
-format("eat") = "3at!"
-format(greet("hello", "world")) = "h3llo world!"
+ = undefined

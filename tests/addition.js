@@ -1,4 +1,9 @@
-function greet(greeting, name) {
-  return greeting + name;
-  return greeting + ' ' + name;
+function yo(x, y) {
+return x;
+
+
+}
+
+function double(z){
+  return z;
 }

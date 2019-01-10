@@ -13,7 +13,8 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "function-extractor": "0.0.5"
+    "function-extractor": "0.0.5",
+    "esprima": "4.0.1"
   },
   "deserializers": {
     "live-programming1/LiveProgramming1View": "deserializeLiveProgramming1View"

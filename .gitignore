@@ -2,3 +2,6 @@
 npm-debug.log
 node_modules
 *.sl
+*.cfg
+*.examples
+G2Live

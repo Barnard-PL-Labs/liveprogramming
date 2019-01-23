@@ -1,6 +1,5 @@
 function yo(x, y) {
-return 2 + x;
-
+  return x;
 }
 
 function double(z){

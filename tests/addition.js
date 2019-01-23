@@ -5,3 +5,7 @@ function yo(x, y) {
 function double(z){
   return z;
 }
+
+function concat(s1, s2){
+  return s1
+}

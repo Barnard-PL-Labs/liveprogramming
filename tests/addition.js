@@ -1,5 +1,5 @@
 function yo(x, y) {
-return 3 + x;
+return 2 + x;
 
 }
 

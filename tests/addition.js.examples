@@ -1,2 +1,2 @@
-yo(3,4) = 7
-yo(1,2) = 3
+test("hello") = "h3llo"
+test("bear") = "b3ar"

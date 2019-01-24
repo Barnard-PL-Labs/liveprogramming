@@ -1,9 +1,4 @@
-function yo(x, y) {
-return x;
-
-
-}
-
-function double(z){
-  return z;
+function test(x){
+  return x;
+  //return y + x * y;
 }

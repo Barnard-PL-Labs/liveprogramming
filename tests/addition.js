@@ -4,7 +4,7 @@ function yo(x, y) {
 
 function double(z){
 //  return z;
-  return z + z;
+  return z + z + z;
 }
 
 function concat(s1, s2){

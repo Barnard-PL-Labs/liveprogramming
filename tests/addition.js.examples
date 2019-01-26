@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-test("hello") = "h3llo"
-test("bear") = "b3ar"
-=======
-yo(3, 4) = 3
-yo(1, 2) = 1
-concat("Hi","Mark") = "Hi Mark"
->>>>>>> cbdf4a83c145326a216c88191bf2bed5c6645694
+yo(3, 4) = 5
+double(7) = 14
+concat("Hello","World") = "Hello World"

@@ -1,5 +1,5 @@
 function yo(x, y) {
-  return x + 2;
+  return x + 5;
 }
 
 function double(z){

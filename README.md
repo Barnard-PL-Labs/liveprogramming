@@ -45,7 +45,7 @@ f("b a ") = "b*a*"
 main("d","y") = "dy y"
 ```
 
-This file is saved in the same directory as the code on which it runs. for example ```tests/addition.js``` has examples in ```tests/addition.js.examples```.
+This file is saved in the "./live" subdirectory, of the code's directory. For example ```tests/addition.js``` has examples in ```tests/.live/addition.js.examples```.  Atom will automatically open the proper file for you.
 
 # Notes
 

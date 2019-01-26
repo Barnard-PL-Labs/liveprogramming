@@ -1,3 +1,0 @@
-yo(3, 4) = 5
-double(7) = 14
-concat("Hello","World") = "Hello World"

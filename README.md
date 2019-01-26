@@ -17,7 +17,7 @@ You might also need to update the package dependencies
 
 ```
 press ctrl+shift+p
-type 'udup' to execute "Update Package Dependecies: Update"
+type 'udup' to execute "Update Package Dependencies: Update"
 press enter
 ```
 

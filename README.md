@@ -53,6 +53,12 @@ Only string are supported at the moment.
 
 It is really important to start the package with the correct file open. If you start the package with the wrong file, or you want to use the package with a different file, you need to refresh the atom editor (ctrl+shift+f5), then start the package again. This will be fixed when one of us learns to use the atom API.
 
+# Testing
+Tests are organized in the test subdirectory, and use the mocha testing framework.
+https://mochajs.org
+Due to difficulties configuring babel and mocha, use of the atom-mocha plugin is recommended:
+https://atom.io/packages/atom-mocha
+
 # TODOs
 
 progress:

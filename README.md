@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=tKmx2myzFEU
 first install atom, then:
 
 ```
-git clone https://github.com/Jack-Huang1/liveprogramming
+git clone https://github.com/santolucito/liveprogramming.git
 cd liveprogramming
 apm link
 ```

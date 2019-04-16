@@ -3,6 +3,64 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@import "https://fonts.googleapis.com/css?family=Inconsolata";
 
 .live-programming1 {
+    body {
+        color: #5f696f;
+        font-family: 'Inconsolata', monospace;
+        font-size: 12pt;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        display: table;
+        border-spacing: 0.3em;
+    }
+    li {
+        list-style: none;
+        display: table-row;
+        padding: 10px;
+    }
+    label {
+        display: table-cell;
+    }
+    button {
+        display: table-cell;
+        display: inline-block;
+        background: transparent;
+        color: #5f696f;
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+        border: solid 1px #5f696f;
+        transition: 0.4s;
+        cursor: pointer;
+        &:hover {
+            border-style: dashed;
+        }
+        &:active {
+            border-style: dashed;
+            background: #535993;
+        }
+    }
+    .x {
+        border-radius: 50%;
+        margin-left: 20px;
+        float: right;
+    }
+    .submit {
+        border-radius: 4px;
+        font-family: 'Inconsolata', monospace;
+        font-size: 12pt;
+    }
+    .lock {
+        border-radius: 4px;
+    }
+    input[type=text] {
+        border: 2px #5f696f;
+        border-radius: 4px;
+        font-family: 'Inconsolata', monospace;
+        font-size: 12pt;
+    }
 }

@@ -1,6 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-shift-e": "live-programming1:toggle",
-    "cmd-shift-e": "live-programming1:toggle"
+    "alt-shift-l": "live-programming1:toggle"
   }
 }

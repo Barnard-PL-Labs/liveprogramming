@@ -30,6 +30,16 @@ chmod u+x cvc4
 mv cvc4 /usr/bin/
 ```
 
+For Windows users it is important to download an appropriate (64 bit, 32 bit) binary for your machine. It is also important that cvc4 is put under an appropriate path, which can be found using `set`. Here is an example on how to do this using PowerShell commands
+
+```
+wget http://cvc4.cs.stanford.edu/downloads/builds/win64-opt/cvc4-1.6-win64-opt.exe -outfile "cvc4"
+cmd /C set
+Move-Item -Path cvc4 -Destination C:\????\??
+```
+
+
+
 Use ctrl+shfit+F5 to reload package in Atom (sometimes need to press twice)
 
 

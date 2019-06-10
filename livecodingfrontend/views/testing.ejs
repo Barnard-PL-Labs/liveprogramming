@@ -6,12 +6,12 @@
 	<body>
 		<h1> Welcome to Live Coding Interface </h1>
 		<p> In the left text-box you can enter javascript code. In the right text-box you can enter javascript examples. </p>
-		<!-- <p> <%= data_transcript %> <%= data_value %> this isn't that interesting... </p> --> 
+		<!-- <p> <%= data_transcript %> <%= data_value %> this isn't that interesting... </p> -->
 		<form id="user-program" method="POST" action="/testing">
 			<label for="user_program_code">Program Code</label>
 			<textarea name="user_program_code" cols="80" rows="10" value="<%= up.code%>"></textarea>
 			<label for="user_program_examples">Program Examples</label>
-			<textarea name="user_program_exanples" cols="80" rows="10" value="<%= up.code%>"></textarea>
+			<textarea name="user_program_examples" cols="80" rows="10" value="<%= up.code%>"></textarea>
 			<input type=submit value="save"/>
 		</form>
 	</body>

@@ -54,6 +54,6 @@ app.post('/testing', urlencodedParser, function(request, response){
 		console.log('examples.txt has been saved');
 
 	});
-
-	response.render('testing', {up: request.query, data_transcript: 'change in examples', data_value: reeval(code, examples)})
+	var newExamples = reeval(up)code, up_examples);
+	response.render('testing', {up: request.query, data_transcript: 'change in examples', data_value: newExamples})
 });

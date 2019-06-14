@@ -16,6 +16,7 @@
     "babel-register": "^6.26.0",
     "esprima": "4.0.1",
     "function-extractor": "0.0.5",
+    "live-backend-nfn5": "^1.0.2",
     "mocha": "^5.2.0"
   },
   "deserializers": {

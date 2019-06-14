@@ -1,11 +1,22 @@
 {
-  "name": "@nfn5/live-backend",
-  "version": "1.0.0",
+  "name": "live-backend-nfn5",
+  "version": "1.0.1",
   "description": "live programming backend summer 2019",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santolucito/liveprogramming.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "esprima": "^4.0.1",
+    "fs": "0.0.1-security",
+    "function-extractor": "0.0.5",
+    "vm": "^0.1.0"
+  }
 }

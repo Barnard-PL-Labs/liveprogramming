@@ -1,6 +1,6 @@
 {
   "name": "live-backend-nfn5",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "live programming backend summer 2019",
   "main": "index.js",
   "scripts": {
